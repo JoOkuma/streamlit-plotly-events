@@ -44,7 +44,8 @@ class StreamlitPlotlyEventsComponent extends StreamlitComponentBase {
         y: arrayItem.y,
         curveNumber: arrayItem.curveNumber,
         pointNumber: arrayItem.pointNumber,
-        pointIndex: arrayItem.pointIndex
+        pointIndex: arrayItem.pointIndex,
+        text: arrayItem.text,
       })
     });
 

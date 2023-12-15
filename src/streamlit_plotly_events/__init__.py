@@ -6,7 +6,7 @@ from json import loads
 # the component, and True when we're ready to package and distribute it.
 # (This is, of course, optional - there are innumerable ways to manage your
 # release process.)
-_RELEASE = False
+_RELEASE = True
 
 # Declare a Streamlit component. `declare_component` returns a function
 # that is used to create instances of the component. We're naming this
@@ -126,7 +126,7 @@ if not _RELEASE:
 
     # Here we add columns to check auto-resize/etc
     st.subheader("Plotly Bar Chart (With columns)")
-    _, c2, _ = st.beta_columns((1, 6, 1))
+    _, c2, _ = st.columns((1, 6, 1))
     with c2:
         fig2 = px.bar(x=[0, 1, 2, 3], y=[0, 1, 2, 3])
         plot_name_holder2 = st.empty()
